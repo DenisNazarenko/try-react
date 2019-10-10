@@ -1,0 +1,20 @@
+:root {
+  background: $color__grey--light;
+  box-sizing: border-box;
+  color: $color__black;
+  font-family: $font-family__default;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: inherit;
+  overflow: hidden;
+  position: fixed;
+  width: inherit;
+}
+
+#root {
+  height: inherit;
+  width: inherit;
+}

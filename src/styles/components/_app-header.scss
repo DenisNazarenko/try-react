@@ -1,0 +1,17 @@
+.app-header {
+  background: $color__white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.app-header__content {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: $page-width__content;
+}
+
+.app-header__logo {
+  color: $color__pink--dark;
+  font-weight: $font-weight--light;
+}

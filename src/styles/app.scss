@@ -1,9 +1,10 @@
-h1 {
-  color: red;
-}
+@charset 'UTF-8';
 
-.app {
-  padding: 20px;
-  border: solid 2px yellow;
-  background: green;
-}
+@import 'variables/common';
+
+@import 'node_modules/normalize.css/normalize';
+
+@import 'root';
+
+@import 'components/app';
+@import 'components/app-header';
