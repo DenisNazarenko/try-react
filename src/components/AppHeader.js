@@ -4,7 +4,7 @@ const AppHeader = props => {
 	return (
 		<header className="app-header">
 			<div className="app-header__container">
-				<div className="app-header__logo">{props.text}</div>
+        <h1 className="app-header__logo">{props.text}</h1>
 			</div>
 		</header>
 	);
