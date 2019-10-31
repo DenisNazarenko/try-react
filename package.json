@@ -5,6 +5,7 @@
   "name": "try-react",
   "repository": "",
   "scripts": {
+    "build": "webpack",
     "start": "webpack-dev-server --mode development"
   },
   "version": "0.1.0",

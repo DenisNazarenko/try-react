@@ -4,7 +4,7 @@ import AppHeader from './AppHeader';
 import InputTypeahead from './InputTypeahead';
 import axios from 'axios';
 
-const API_URL = 'http://npmsearch.com/';
+const API_URL = 'https://api.github.com/search/users';
 
 const App = () => {
 	const search = searchValue => {
