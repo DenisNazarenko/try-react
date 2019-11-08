@@ -6,8 +6,8 @@ const InputTypeahead = ({ search }) => {
 	const handleInputChanges = e => {
 		setInputValue(e.target.value);
 
-    if (e.target.value.length > 3) {
-      search(e.target.value);
+    if (inputValue.length > 3) {
+      search(inputValue);
     }
 	};
 

@@ -2,15 +2,26 @@ import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import AppHeader from './AppHeader';
 import InputTypeahead from './InputTypeahead';
-import axios from 'axios';
 
 const API_URL = 'https://api.github.com/search/users';
 
 const App = () => {
 	const search = searchValue => {
+	  const controller = new AbortController();
+	  const signal = controller.signal;
 		const url = _buildUrl(searchValue);
+		// debugger;
 
-		_fetchDataPromise(url);
+		addEventListener('fetch', event => {
+		  console.log(event);
+    });
+
+		fetch(url,{ signal })
+      .then(response => {
+        console.log(response);
+    })
+
+		// _fetchDataPromise(url);
 	};
 
 	function _buildUrl(query, items = 10) {
